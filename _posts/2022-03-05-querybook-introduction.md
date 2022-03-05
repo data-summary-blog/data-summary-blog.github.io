@@ -13,7 +13,9 @@ Querybook의 가장 특별한 Feature에 대해 설명한다면, DataDocs로 구
 
 Querybook은 Flask 기반이며, 인프라는 다음과 같이 구성되어 있습니다.
 
-![](./images/querybook_infra.jpeg)
+<p align="center">
+    <img src="./images/querybook_infra.jpeg" alt="querybook_infra">
+</p>
 
 **Database**  
 Database는 DataDocs나 Query Execution History, User Info등을 담는 장소입니다. 보통 MySQL Pod를 k8s상에 띄워서 사용하거나, 개인의 저장소를 사용할 수도 있습니다. SQLAlchemy가 호환되면 다 가능합니다.
