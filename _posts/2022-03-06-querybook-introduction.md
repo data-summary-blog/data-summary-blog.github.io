@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Querybook - Introduction (1)"
-categories: querybook
+title: "Querybook - Introduction"
+categories: misc
 author: "Yongchan Hong"
 ---
 
