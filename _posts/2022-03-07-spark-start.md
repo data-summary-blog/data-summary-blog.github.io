@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "좌충우돌 Spark 배우기 - Spark 설치하기 & 시작하기"
-categories: querybook
+categories: spark
 author: "Yongchan Hong"
 ---
 
