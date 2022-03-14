@@ -13,7 +13,7 @@ Selenium Grid는 무엇일까요? 일반 Selenium과는 어떻게 다를까요? 
 Selenium Grid는 remote machine에서 Selenium script를 구동하기 위해 존재하는 것으로, client로부터 오는 커맨드를 각 remote instance에 라우팅해줍니다. 따라서, 같은 테스트를 여러 개의 remote machine에서 parallel하게 구동하기 매우 유용합니다.  
 그렇다면 일반 Selenium Webdriver와는 어떻게 다를까요? 사실 Selenium Grid는 Selenium Webdriver를 원격으로 구동하는 stand-alone server일 뿐입니다. Selenium Webdriver는 구체적인 OS와 브라우저에서 구동이 되지만, Selenium Grid에선 다양한 OS와 브라우저 환경을 세팅하고 구동할 수 있습니다.  
 Selenium Grid는 언제 사용하는게 좋고, 언제 사용하지 않는게 좋을까요? 먼저, 가장 일반적인 사용케이스는 일반적인 API에서 정보를 가져올 수 없고 브라우저를 통해서만 가져올 수 있는 경우입니다. 쿠버네티스 환경으로 구축 되어 있는 경우, Selenium Grid를 띄운후 Script를 구동하고 결과값을 받아올 수 있습니다. 또한, 여러 가지 브라우저/OS 환경에서 구동하고 실험하고 싶은 경우 사용합니다. 이 경우, 크롬에서는 괜찮은데 IE에선 문제가 생기는 경우 등을 확인해볼 수 있습니다. 또한, 간단한 반복 Test를 진행하고 싶은 경우 사용가능합니다. 너무 무거운 test의 경우, Selenium Grid를 사용하는 것을 비추천한다고 하지만, 가벼운 실험의 경우 parallel하게 구동할 수 있습니다.    
-최근에 Selenium Grid 4의 정식 버전이 나왔습니다. 이전 Selenium Grid 3의 경우에는 Client와 Server(Browser Driver)사이에 JSON Wire Protocol Over HTTP라는게 있어서 사이에서 전달하는 역할을 하였다면, Selenium Grid 4에서는 Client와 Server끼리 직접 오갈 수 있게 변경이 되었습니다. 따라서 이전보다 더 Stable하게 브라우저에서 구동이 됩니다. 그리고 또 ui가 이쁘게 변경이 되었습니다.
+최근에 Selenium Grid 4의 정식 버전이 나왔습니다. 이전 Selenium Grid 3의 경우에는 Client와 Server(Browser Driver)사이에 JSON Wire Protocol Over HTTP라는게 있어서 사이에서 전달하는 역할을 하였다면, Selenium Grid 4에서는 Client와 Server끼리 직접 오갈 수 있게 변경이 되었습니다. 따라서 이전보다 더 Stable하게 브라우저에서 구동이 됩니다. 그리고 또 UI가 이쁘게 변경이 되었습니다.
 
 ![](https://miro.medium.com/max/700/1*3ZqqGJWULaSLX02rOvGQrw.png)
 
