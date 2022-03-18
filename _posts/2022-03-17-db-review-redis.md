@@ -85,6 +85,6 @@ flushall #레디스 서버의 모든 데이터 삭제
 이렇게 레디스와 그 사용법에 대해 알아보겠다. 기회가 된다면 추후에 고려해야할 요소도 다뤄보도록 하겠다.
 
 ### Reference 
-https://aws.amazon.com/ko/elasticache/what-is-redis/
-https://www.youtube.com/watch?v=mPB2CZiAkKM
+https://aws.amazon.com/ko/elasticache/what-is-redis/  
+https://www.youtube.com/watch?v=mPB2CZiAkKM  
 https://brunch.co.kr/@jehovah/20
