@@ -2,7 +2,9 @@
 layout: about
 ---
 
-Chan(https://github.com/yongchand) and Sungjoon(https://github.com/skeptic-biped) from PUBG Data Team
+Chan(https://github.com/yongchand) from PUBG New State Date Team.  
+
+Love to learn new things :) (AND I LOVE CATS🐈)
 
 <!-- ### What's New
 
