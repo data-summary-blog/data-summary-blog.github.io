@@ -1,9 +1,9 @@
-title: Data Summary Blog # The title of the blog
-author: Data Summary Blog # Your name 
+title: Chan's Data Summary Blog # The title of the blog
+author: Yongchan Hong # Your name 
 # email: yongchana@gmail.com # your email shown in the footer
 url: https://data-summary-blog.github.io/ # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
-  Day-to-day basis of what I learn
+  Learning never exhausts the mind
 favicon: "./favicon.ico" # set the favicon of the site 
 
 show_excerpts: false # set to true to show excerpts on the homepage
