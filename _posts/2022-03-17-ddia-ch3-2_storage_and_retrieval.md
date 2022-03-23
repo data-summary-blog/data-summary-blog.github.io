@@ -10,7 +10,7 @@ author: "Yongchan Hong"
 
 > In this DDIA category, I will post a summary of Designing Data Intensive Applications (DDIA) from chapter 1 to 12.
 
-In this chapter, we learn about storage and retrieval.
+In this chapter, we will learn about storage and retrieval.
 
 ## OLAP AND OLTP
 - `Transcation`: 데이터베이스 상태를 변화시키기 위해 수행하는 작업이자 읽기/그룹의 논리 단위 형태
@@ -39,7 +39,7 @@ In this chapter, we learn about storage and retrieval.
 - OLTP Database에서 ETL을 통해 적재함
 - 분석 접근에 맞춰서 최적화 시킬수 있음 (색인이 그다지 유용하지않음)
 - 데이터모델로는 관계형 모델 사용
-- Redshift, Hive, Spark SQL, Impala, Presto, Drill 등
+- Redshift 등
 - 분석용 스키마로는 `Star Schema`나 `Snowflake Schema` 사용
     - Star Schema
         - 스키마 중심에 Fact Table을 기준으로 여러 Dimension Table들이 퍼져나감
@@ -68,7 +68,7 @@ In this chapter, we learn about storage and retrieval.
 - C-Store는 복제 데이터를 다양한 방식으로 정렬해서 저장하여 질의할때 적절한 버전을 찾아 질의하게 된다.
     - 로우의 2차 색인과 비슷하나 로우의 2차 색인은 포인터만 포함하는 반면 여기선 값을 포함하는 칼럼만 있다.
 - 칼럼 지향 저장소에 쓰기를 할때는 B 트리 접근방식은 압축된 칼럼에서 불가하고 (로우를 삽입하기 위해 모든 칼럼을 갱신해야함 으로) LSM트리 방식으로 가능하다.
-- 칼럼 지향 저장소 예시: Redshift, MariaDB
+- 칼럼 지향 저장소 예시: Redshift, MariaDB, Snowflake!(micro-partition 후에 column-oriented)
 
 ## 집계: 데이터큐브와 구체화 뷰
 - Count, Sum, AVG 등 집계를 위해 질의에 자주 쓰이는 합이나 카운트를 캐시해두자!
