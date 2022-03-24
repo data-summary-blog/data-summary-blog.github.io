@@ -20,7 +20,8 @@ HTTP의 특징은 다음과 같다.
 
 ## HTTPS  
 ![](https://1.bp.blogspot.com/-alfxKGRbNUg/WsmLtikh1vI/AAAAAAAATSw/zNoMl22FD94ZZlyrggBKR6L3UuZAwzraACLcBGAs/s1600/12.png)  
-HTTPS (HyperText Transfer Protocol Secure)은 HTTP에서 보안이 추가되어 서버와 클라이언트 사이의 통신 내용이 암호화 된다. 이러한 암호화는 SSL(Secure Sockets Layer)/TLS(Transport Layer Security)로 가능한데, 이 두가지는 추후에 설명하도록 하겠다. HTTPS의 통신 흐름은 다음과 같다.  
+HTTPS (HyperText Transfer Protocol Secure)은 HTTP에서 보안이 추가되어 서버와 클라이언트 사이의 통신 내용이 암호화 된다. 이러한 암호화는 SSL(Secure Sockets Layer)/TLS(Transport Layer Security)로 가능한데, 이 두가지는 추후에 설명하도록 하겠다. HTTPS의 통신 흐름은 다음과 같다 (이를 TLS/SSL Handshake라 한다!).
+> SSL은 웹서버와 웹브라우저 사이에 모든 정보를 암호화해주는 방식을 의미한다 (설명할 과정들). TLS는 새버전의 SSL이다.  
 1. 서버를 가지고 있는 기업은 HTTPS를 적용하기 위해 `public key`와 `private key`를 만든다.  
 > public key는 본인이 가진 private key로만 복호화 할 수 있다.  
 2. CA 기업을 선택한후 CA 기업은 해당 기업의 이름, 서버 공개키, 서버 암호화 방법을 담은 Server Certificate을 만든다. 이러한 Certificate은 CA 기업의 개인 키로 암호화해서 전달된다.
