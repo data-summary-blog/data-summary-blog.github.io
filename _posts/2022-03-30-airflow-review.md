@@ -107,6 +107,7 @@ task내 dependency를 정의해주기 위해 bitshift operator 인 >>나 <<를 �
 - `airflow backfill -s start_date -e end_date dag_id` 통해 백필 가능
 - RUN(Execution Date)는 실제로 DagRun이 생성된 시간이다.
 - Task Group을 이용해 Task를 묶을 수 있다.
+- Event Driven Auto Scaler로 kubernetes에선 KEDA를 쓸 수 있다. 
 
 ### Reference
 https://airflow.apache.org/  
