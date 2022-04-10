@@ -113,7 +113,7 @@ db_get() {
 - `faster writes`: LSM-Trees
     - B-Trees will have to write twice (write-ahead log and tree page)
     - LSM Trees can have better compaction
-    - LSM jus thave to write sequential SS table unlike B Trees which has to update multiple pages in tree
+    - LSM just have to write sequential SS table unlike B Trees which has to update multiple pages in tree
 - `faster reads`: B-Trees
     - LSM-Trees: have to check several different structures and SSTables at different stages of compaction
     - B Tree will have exactly one index
