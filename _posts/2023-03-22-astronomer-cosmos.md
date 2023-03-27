@@ -80,7 +80,7 @@ So let us deep dive into Cosmos.
 - Cosmos currently provides connections to bigquery, databricks, postgres, redshift and snowflake. You can either provide `conn_id` which will use Airflow connection, or you can provide dbt_args. This let engineers to be freed from managing separate profiles.yml. However, currently most connections are based on user/password authentication.
 - For scheduling, you can use time-based scheduling my providing `schedule interval`. You can also use data-aware scheduling. By providing dataset in schedule, you can let following dag to run after completion of preceding dag. For example, `schedule=[get_dbt_dataset("my_conn", "project_one", "my_model")]` If you provide this schedule inside project_two DAG, this will run immediately after project_one. 
 - You can add test after each model. This can be configured by `test_behavior` variable.
-- You can filter model by providing `select` and `exclude` parameter. For example, you can provide something like: ` select={"configs": ['tags:daily']}.` You can also filter by path.
+- You can filter model by providing `select` and `exclude` parameter. For example, you can provide something like: **select={"configs": ['tags:daily']}.** You can also filter by path.
  
 Thanks to Comsos, now we can integrate dbt easily. But still, Cosmos needs more development. For example, there are only five operators right now in Cosmos: DbtRunOperator, DbtTestOperator, DbtLSOperator, DbtSeedOperator, and DbtRunOperationOperator. There can be more operators like DbtSnapshotOperator. Also, authentication and connection variety is still limited.  
 
