@@ -37,7 +37,7 @@ terraform {
 ## 2. Terraform Related Errors
 - You can use `depends_on` to prevent a resource to be created before resources inside `depends_on` are created.
 - Even if you are not authorized, `terraform validate` can validate the configuration.
-- You can create `modules` for terraofrm, which will be used as containers for multiple resources. This will be illustrated further in a separate post.
+- You can create `modules` for terraform, which will be used as containers for multiple resources. This will be illustrated further in a separate post.
 - You can add `validation` of variables. You should include `condition` and `error_message` inside validation. Error message should start with an uppercase letter and end with a period. 
 ```
 validation {
